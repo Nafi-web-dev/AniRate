@@ -6,3 +6,10 @@ body{
   border: 2.1px solid #DCDE0D ;
   border-radius: 8px;
 }
+#b1{
+  text-align: left;
+}
+.movie {
+  border: 2.1px solid #DCDE0D ;
+  border-radius: 8px; 
+}
