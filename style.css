@@ -20,4 +20,29 @@ body{
 
 .name {
   font-size: 14.5px;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#AniRate {
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.xyz {
+  vertical-align: middle;
+   
+  text-decoration: none; 
+  margin-left: 45px; 
+}
+#nevbar{
+  background-color: #121822;
+  height: 70px;
+}
+pre{
+  display: inline;
 }
