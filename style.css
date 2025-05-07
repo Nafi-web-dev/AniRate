@@ -37,7 +37,8 @@ body {
   vertical-align: middle;
    
   text-decoration: none; 
-  margin-left: 45px; 
+  margin-left: 45px;
+  color: #0035FF;
 }
 #nevbar{
   background-color: #121822;
@@ -45,4 +46,10 @@ body {
 }
 pre{
   display: inline;
+}
+.hr{
+  margin: 0;     /* Removes space above and below the <hr> */
+  padding: 0;
+  border: none;
+  border: 0.7px solid #FFF201;
 }
