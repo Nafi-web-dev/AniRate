@@ -5,6 +5,8 @@ body{
 .img {
   border: 2.1px solid #DCDE0D ;
   border-radius: 8px;
+  margin: 0;
+  padding: 0;
 }
 #b1{
   text-align: left;
@@ -16,6 +18,8 @@ body{
 .c1{
   
   color: #139AFF;
+  margin-left: 5px;
+  
 }
 
 .name {
