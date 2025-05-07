@@ -50,6 +50,6 @@ pre{
 .hr{
   margin: 0;     /* Removes space above and below the <hr> */
   padding: 0;
-  border: none;
+  
   border: 0.7px solid #FFF201;
 }
