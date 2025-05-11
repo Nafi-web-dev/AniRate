@@ -4,8 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anime Movie - Hindi and english dub</title>
+  <title>Anime - Hindi and English Dub</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Flexbox container for aligning images in a row */
+    .anime-container {
+      display: flex;               /* Use flexbox layout */
+      justify-content: space-around; /* Space images evenly */
+      align-items: center;         /* Center the images vertically */
+      flex-wrap: wrap;             /* Allow images to wrap on smaller screens */
+      margin-top: 20px;            /* Add some space above */
+    }
+
+    /* Styling for each anime item */
+    .anime-item {
+      text-align: center;           /* Center the text under each image */
+      margin: 10px;                 /* Add space between images */
+    }
+
+    /* Styling for images to maintain consistent height */
+    .anime-item img {
+      height: 170px;                /* Set image height */
+      width: auto;                  /* Auto width to maintain aspect ratio */
+    }
+
+    /* Optional: Hover effect on images (for interactivity) */
+    .anime-item:hover img {
+      transform: scale(1.05);       /* Slight zoom-in effect */
+      transition: transform 0.3s;   /* Smooth transition */
+    }
+  </style>
 </head>
 
 <body>
@@ -19,31 +47,29 @@
   <hr class="hr">
   <br>
 
- <table>
-  <tr>
-    <td>
-      <div style="text-align: center;">
-        <img class="img" src="images (40) (2).jpeg" alt="Your Name" height="170"><br>
-        <h4>Your Name</h4>
-        <a class="c1" href="yournamehindi.html">Hindi Dub</a>
-        <br>
-        <a class="c1" href="yournameeng.html">English Dub</a>
-      </div>
-    </td>
+  <!-- Flex container to align images in a row -->
+  <div class="anime-container">
+    <div class="anime-item">
+      <img class="img" src="images (40) (2).jpeg" alt="Your Name"><br>
+      <h4>Your Name</h4>
+      <a class="c1" href="yournamehindi.html">Hindi Dub</a><br>
+      <a class="c1" href="yournameeng.html">English Dub</a>
+    </div>
 
-    <td>
-      <div style="text-align: center;">
-        <img class="img" src="images (40) (3).jpeg" alt="The God Of Highschool" height="170"><br>
-        <h4>The God Of Highschool</h4>
-        <a class="c1" href="TGOH.html">English Sub</a>
-        <br>
-        <pre></pre>
-        <br>
-        
-      </div>
-    </td>
-  </tr>
-</table>
+    <div class="anime-item">
+      <img class="img" src="images (40) (3).jpeg" alt="The God Of Highschool"><br>
+      <h4>The God Of Highschool</h4>
+      <a class="c1" href="TGOH.html">English Sub</a><br>
+    </div>
+
+    <div class="anime-item">
+      <img class="img" src="images (36) (1).jpeg" alt="Attack on Titan"><br>
+      <h4>Attack on Titan</h4>
+      <a class="c1" href="aothindi.html">Hindi Dub</a><br>
+      <a class="c1" href="aoteng.html">English Sub</a>
+    </div>
+  </div>
+
 </body>
 
 </html>
