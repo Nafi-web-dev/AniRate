@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AniRate Login</title>
+  
+  <style>
+    body {
+      font-family: Arial;
+      background: #001725;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      background: gold;
+      border: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login to AniRate</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p id="msg" style="color:red;"></p>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Demo credentials
+      if (user === "admin" && pass === "1234") {
+        window.location.href = "home.html"; // Redirect
+      } else {
+        document.getElementById("msg").innerText = "Invalid credentials!";
+      }
+    }
+  </script>
+</body>
+</html>
